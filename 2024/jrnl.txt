@@ -1,5 +1,5 @@
 Day 1 : 
 rust, python (26-10-25)
 
-Answer = 2176849
-
+Part 1 answer = 2176849
+Part 2 answer = 23384288
