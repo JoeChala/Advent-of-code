@@ -1,1 +1,5 @@
-Day 1 : completed on 26-10-2025
+Day 1 : 
+rust, python (26-10-25)
+
+Answer = 2176849
+
