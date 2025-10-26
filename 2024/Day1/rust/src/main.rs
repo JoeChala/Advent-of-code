@@ -15,13 +15,22 @@ fn main() {
     quicksort(&mut left,0,len-1);
     quicksort(&mut right,0,len-1);
     
+    //Part 1 finding sum of difference between pairs
     let mut sum : i32 = 0;
     for i in 0..len {
         let diff : i32 = left[i as usize] - right[i as usize];
         sum += diff.abs();
-        println!("({:?},{:?}) diff = {diff}",left[i as usize],right[i as usize]);
+        //println!("({:?},{:?}) diff = {diff}",left[i as usize],right[i as usize]);
     }
-    println!("Sum : {sum}");
+    println!("Part 1 : {sum}");
+
+    //Part 2 finding similarity score, element in left * freq in right
+    let mut sim_score : i32 = 0;
+    for i in 0..len {
+        let count : i32 = right.iter().filter(|&&x| x == left[i as usize]).count() as i32;
+        sim_score += left[i as usize] * count;
+    }
+    println!("Part 2 : {sim_score}");
 }
 
 
