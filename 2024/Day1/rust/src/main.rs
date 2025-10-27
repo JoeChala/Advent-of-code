@@ -19,8 +19,7 @@ fn main() {
     let mut sum : i32 = 0;
     for i in 0..len {
         let diff : i32 = left[i as usize] - right[i as usize];
-        sum += diff.abs();
-        //println!("({:?},{:?}) diff = {diff}",left[i as usize],right[i as usize]);
+        sum += diff.abs(); 
     }
     println!("Part 1 : {sum}");
 
