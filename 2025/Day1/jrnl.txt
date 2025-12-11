@@ -1,5 +1,0 @@
-Solved part 1 (answer = 1195): 
-    python on 2025-12-06 14:29:10
-
-Solved part 2 (answer = 6770):
-    python on 2025-12-06 16:10:05
