@@ -1,36 +1,31 @@
 import csv
 
-
 def check_valid(num: int) -> bool:
     original = num
+    length = len(str(num))
+    pow10 = [10**i for i in range(length + 1)]
+    divisors = []
+    for L in range(1, int(length ** 0.5) + 1):
+        if length % L == 0:
+            if L < length:
+                divisors.append(L)
+            other = length // L
+            if other < length and other != L:
+                divisors.append(other)
 
-    length = 0
-    temp = num
-    while temp > 0:
-        temp //= 10
-        length += 1
+    for L in divisors:
+        block = original % pow10[L]     
+        k = length // L
 
-    for L in range(1, length):
-        if length % L != 0:
-            continue 
-        temp = original
-        block = temp % (10 ** L)
-
-        k = length // L  # number of blocks
-
-        valid = True
+        repeated, multiplier = 0,1 
         for _ in range(k):
-            current = temp % (10 ** L)
-            if current != block:
-                valid = False
-                break
-            temp //= 10 ** L
+            repeated += block * multiplier
+            multiplier *= pow10[L]
 
-        if valid:
-            return False 
-    
+        if repeated == original:
+            return False
+
     return True
-
 
 
 if __name__ == "__main__":
@@ -44,7 +39,7 @@ if __name__ == "__main__":
             first,last = list(map(int,i.strip().split("-")))
             for i in range(first,last+1):
                 if not check_valid(i):
-                    count += i 
+                    count += i  
             
     print(count)
    
