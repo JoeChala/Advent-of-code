@@ -1,13 +1,19 @@
 Day 1
 Solved part 1 (answer = 1195): 
-    python on 2025-12-06 14:29:10
+    python on 2025-12-06 14:29
 Solved part 2 (answer = 6770):
-    python on 2025-12-06 16:10:05
+    python on 2025-12-06 16:10
 
 Day 2
 Solved part 1 (answer = 18893502033): 
-    python on 2025-12-11 20:45:10
+    python on 2025-12-11 20:45
 Solved part 2 (answer = 26202168557):
-    python on 2025-12-11 21:27:33
+    python on 2025-12-11 21:27
+
+Day 3
+Solved part 1 (answer = 17109): 
+    python on 2025-12-22 17:43
+Solved part 2 (answer = 169347417057382):
+    python on 2025-12-22 18:12
 
 
