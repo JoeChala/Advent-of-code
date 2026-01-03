@@ -22,4 +22,9 @@ Solved part 1 (answer = 1467):
 Solved part 2 (answer = 8484):
     python on 2025-12-22 20:27
 
+Day 5
+Solved part 1 (answer = 811): 
+    python on 2026-01-03 21:25
+Solved part 2 (answer = 338189277144473):
+    python on 2026-01-03 21:32
 
